@@ -1,0 +1,90 @@
+/* Style for the login button */
+.login-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Style for the popup */
+.login-popup {
+    position: fixed;
+    top: 4%;
+    
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: right 0.5s ease;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content form {
+    margin-top: 4%;  /* Move the form down by 4% */
+}
+
+.popup-content form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    background-color: #45a049;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
+
+/* When the checkbox is checked, the popup slides in */
+#loginToggle:checked ~ .login-popup {
+    right: 0;
+}
