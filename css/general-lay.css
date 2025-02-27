@@ -1,9 +1,8 @@
 @font-face {
   font-family: customfont;
-  src: url('font/fonts.woff2') format('woff2'),
-       url('font/fonts.woff') format('woff'),
-       url('font/fonts.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Weird-Dude537/font/main/Fonts.ttf');
 }
+
 
 body, html {
     margin: 3% 0 0 0;
